@@ -1,146 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wealth Tech Insights - Premium Financial Network</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;800&display=swap' rel="stylesheet">
+    <meta charset="UTF-8"><title>Wealth Tech Insights Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #080811;
-            --text-color: #e2e8f0;
-            --accent-color: #6366f1;
-            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
-        }
-        
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        header {
-            width: 100%;
-            max-width: 1200px;
-            padding: 2rem 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--glass-border);
-            box-sizing: border-box;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        main {
-            width: 100%;
-            max-width: 800px;
-            padding: 3rem 1rem;
-            box-sizing: border-box;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 3rem;
-        }
-
-        .article-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            width: 100%;
-        }
-
-        .article-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(12px);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: 1.5rem;
-            transition: transform 0.2s, border-color 0.2s;
-            text-decoration: none;
-            display: block;
-        }
-
-        .article-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent-color);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .article-card h2 {
-            font-size: 1.4rem;
-            color: #f1f5f9;
-            margin: 0 0 0.5rem 0;
-            font-weight: 600;
-        }
-
-        .article-card .read-more {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        footer {
-            width: 100%;
-            max-width: 1200px;
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: 1px solid var(--glass-border);
-            color: #64748b;
-            font-size: 0.9rem;
-            margin-top: auto;
-            box-sizing: border-box;
-        }
-    </style>
+            :root {
+                --bg-color: #040814;
+                --text-color: #a5b4fc;
+                --accent-color: #38bdf8;
+                --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #a855f7 100%);
+            }
+            body {
+                font-family: 'JetBrains Mono', monospace; background-color: var(--bg-color);
+                color: var(--text-color); margin: 0; padding: 2rem; line-height: 1.7;
+            }
+            .cyber-grid { max-width: 1000px; margin: 0 auto; position: relative; }
+            .cyber-panel {
+                background: rgba(15, 23, 42, 0.6); border: 1px solid #38bdf8;
+                border-radius: 4px; padding: 2.5rem; box-shadow: 0 0 15px rgba(56,189,248,0.1);
+            }
+            .cyber-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(56,189,248,0.3); padding-bottom: 1rem; margin-bottom: 2rem; }
+            .logo { font-weight: 800; font-size: 1.8rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            .article-list { display: flex; flex-direction: column; gap: 1.5rem; }
+            .article-card { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(56,189,248,0.2); padding: 1.5rem; display: block; text-decoration: none; color: inherit; position: relative; }
+            .article-card h2 { font-size: 1.5rem; color: #fff; margin: 0; }
+            .article-card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--accent-color); opacity: 0; }
+            .article-card:hover::before { opacity: 1; }
+            .article-card:hover { background: rgba(30, 41, 59, 0.8); border-color: #38bdf8; }
+            .tag { background: rgba(168, 85, 247, 0.2); border: 1px solid rgba(168, 85, 247, 0.4); padding: 0.2rem 0.6rem; font-size: 0.8rem; color: #e879f9; }
+            .hero-img { width: 100%; border: 1px solid rgba(56,189,248,0.4); filter: hue-rotate(45deg); margin-bottom: 2rem; }
+        </style>
 </head>
 <body>
-    <header>
-        <div class="logo">WEALTH TECH INSIGHTS</div>
-    </header>
-    <main>
-        <div class="hero">
-            <h1>Wealth Tech Insights</h1>
-            <p class="subtitle">Your Gateway to Financial Freedom and Wealth Intelligence.</p>
-        </div>
-        <div class="article-list">
-            
+    <div class="cyber-grid">
+        <div class="cyber-panel">
+            <div class="cyber-header">
+                <div class="logo">WEALTH TECH INSIGHTS</div>
+                <div style="font-size:0.8rem; color:#10b981;">SECURE PROTOCOL</div>
+            </div>
+            <h1>SYSTEM OVERRIDE: DATA FEEDS</h1>
+            <div class="article-list">
+                
             <a href="100-of-the-most-searched-keywords-for-the-finance-industry-success.html" class="article-card">
                 <h2>Why 100 of the most searched keywords for the finance industry is Essential for Success</h2>
                 <div class="read-more">Read Article &rarr;</div>
@@ -221,10 +121,8 @@
                 <div class="read-more">Read Article &rarr;</div>
             </a>
             
+            </div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Wealth Tech Insights. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
